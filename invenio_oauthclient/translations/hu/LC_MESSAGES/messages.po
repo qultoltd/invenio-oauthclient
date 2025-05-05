@@ -58,7 +58,7 @@ msgstr "Kapcsolt fióktokenek"
 #: invenio_oauthclient/ext.py:250
 #, python-format
 msgid "%(icon)s Linked accounts"
-msgstr "%(icon)s kapcsolt fiók"
+msgstr "%(icon)s Kapcsolt fiók"
 
 #: invenio_oauthclient/contrib/cern.py:410
 #, python-format
