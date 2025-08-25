@@ -54,11 +54,14 @@
 
 {% macro oauth_button(name, next=None) %}
 <div class="field">
-  <a class="fluid ui basic button large"
+  <a class="fluid ui button large"
      href="{{url_for('invenio_oauthclient.login', remote_app=name, next=next or request.referrer)}}">
     <i class="{{ name|lower() }} icon"></i> {{
       _('Sign in with %(title)s', title=config.OAUTHCLIENT_REMOTE_APPS[name]['title'])
     }}
   </a>
+  <div class="oauth-text">
+      {{_('SZTE researchers can log in using their @szte.hu email address and password; no prior registration is required.')}}
+  </div>
 </div>
 {% endmacro %}
